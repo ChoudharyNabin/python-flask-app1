@@ -1,11 +1,9 @@
-pipeline {
-  /* 
+pipeline { 
   agent {
     label 'python'
-  } 
-  */
+  }
 
-  agent any
+  // agent any
   
   stages {
     stage('Build') {
