@@ -7,15 +7,7 @@ pipeline {
 
   agent any
   
-  options { 
-      skipDefaultCheckout() 
-  }
   stages {
-    stage('Checkout') {
-      steps {
-        sh 'git checkout develop'
-      }
-    }
     stage('Build') {
       steps {
         // sh 'git checkout develop'
