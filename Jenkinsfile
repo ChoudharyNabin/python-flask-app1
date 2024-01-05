@@ -1,7 +1,12 @@
 pipeline {
+  /* 
   agent {
     label 'python'
-  }
+  } 
+  */
+
+  agent any
+  
   options { 
       skipDefaultCheckout() 
   }
