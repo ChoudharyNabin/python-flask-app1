@@ -2,14 +2,13 @@ FROM python:3.12
 
 WORKDIR /app
 
+# Install dependencies
 COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install -r requirements.txt
-
+# Copy the entire application
 COPY . .
 
-#EXPOSE 5050
+EXPOSE 5050
 
 CMD ["python", "app.py"]
-
-#ENTRYPOINT ["python", "app.py"]
