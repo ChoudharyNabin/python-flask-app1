@@ -1,0 +1,11 @@
+.git/
+.gitignore
+
+venv/
+instance/
+static/
+
+__pycache__
+.vscode
+
+
