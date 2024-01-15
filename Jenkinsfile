@@ -7,6 +7,15 @@ pipeline {
     }
 
     stages {
+        stage('Install Docker') {
+            steps {
+                script {
+                    // Install Docker on the Jenkins agent
+                    sh 'curl -fsSL https://get.docker.com | sh'
+                }
+            }
+        }
+
         stage('Checkout') {
             steps {
                 script {
