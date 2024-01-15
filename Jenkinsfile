@@ -15,14 +15,6 @@ pipeline {
 //                 }
 //             }
 //         }
-        stage('Install Docker') {
-            steps {
-                script {
-                    // Install Docker on the Jenkins agent
-                    sh 'curl -fsSL https://get.docker.com | sudo sh'
-                }
-            }
-        }
 
         stage('Checkout') {
             steps {
