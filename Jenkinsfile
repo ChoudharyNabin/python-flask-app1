@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Install Docker on the Jenkins agent
-                    sh 'curl -fsSL https://get.docker.com | sh'
+                    sh 'curl -fsSL https://get.docker.com | sudo sh'
                 }
             }
         }
